@@ -1,0 +1,15 @@
+#N canvas 423 87 791 835 12;
+#X obj 301 267 *~;
+#X obj 332 217 vline~;
+#X obj 301 291 *~ 0.15;
+#X obj 302 351 dac~;
+#X obj 431 109 r Trigger;
+#X msg 403 160 1 10 \, 0 200 10;
+#X obj 302 131 osc~ 500;
+#X connect 0 0 2 0;
+#X connect 1 0 0 1;
+#X connect 2 0 3 0;
+#X connect 2 0 3 1;
+#X connect 4 0 5 0;
+#X connect 5 0 1 0;
+#X connect 6 0 0 0;
